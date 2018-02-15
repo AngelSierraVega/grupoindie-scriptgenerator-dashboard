@@ -32,7 +32,7 @@ class Document extends Bootstrap3\Document
      */
     public static function instanceWithWebSources($title, $lang = "en")
     {
-        return new \GIndie\ScriptGenerator\Dashboard\Document($title, $lang, null, null, null, null);
+        return new static($title, $lang, null, null, null, null);
     }
 
 }

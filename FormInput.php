@@ -19,6 +19,10 @@ namespace GIndie\ScriptGenerator\Dashboard;
  * @edit SG-DSHBRD.00.01
  * - Extend from \GIndie\ScriptGenerator\Bootstrap3\FormInput
  * - Created form(), formGetOnSelf(), inputText(), label(), inputHidden(), inputSubmit
+ * @edit SG-DSHBRD.00.02 18-02-04
+ * - Created formGetOnCustom(), formPostOnCustom()
+ * @edit SG-DSHBRD.00.03 18-02-14
+ * - Created formPostOnSelf()
  */
 class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
 {
@@ -34,20 +38,70 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
     }
 
     /**
-     * @since SG-DSHBRD.00.01
+     * @since SG-DSHBRD.00.02
      * 
      * @param string $formId
-     * @param string $action
+     * @param string $customTarget
      * 
      * @return \GIndie\ScriptGenerator\Dashboard\FormInput\Form
      */
-    public static function formGetOnSelf($formId, $action)
+    public static function formGetOnCustom($formId, $customTarget)
+    {
+        $form = static::form();
+        $form->setMethod("get");
+        $form->setTarget($customTarget);
+        $form->setId($formId);
+        return $form;
+    }
+
+    /**
+     * @since SG-DSHBRD.00.01
+     * 
+     * @param string $formId
+     * 
+     * @return \GIndie\ScriptGenerator\Dashboard\FormInput\Form
+     */
+    public static function formGetOnSelf($formId)
     {
         $form = static::form();
         $form->setMethod("get");
         $form->setTarget("_self");
         $form->setId($formId);
-        $form->addInput(static::inputHidden("DSHBRD-ACTION", $action));
+        $form->addInput(static::inputHidden("DSHBRD-FRM-SBMT", $formId));
+        return $form;
+    }
+    
+    /**
+     * @since SG-DSHBRD.00.03
+     * 
+     * @param string $formId
+     * 
+     * @return \GIndie\ScriptGenerator\Dashboard\FormInput\Form
+     */
+    public static function formPostOnSelf($formId)
+    {
+        $form = static::form();
+        $form->setMethod("post");
+        $form->setTarget("_self");
+        $form->setId($formId);
+        $form->addInput(static::inputHidden("DSHBRD-FRM-SBMT", $formId));
+        return $form;
+    }
+    
+    /**
+     * @since SG-DSHBRD.00.02
+     * 
+     * @param string $formId
+     * @param string $customTarget
+     * 
+     * @return \GIndie\ScriptGenerator\Dashboard\FormInput\Form
+     */
+    public static function formPostOnCustom($formId, $customTarget)
+    {
+        $form = static::form();
+        $form->setMethod("post");
+        $form->setTarget($customTarget);
+        $form->setId($formId);
         return $form;
     }
 
