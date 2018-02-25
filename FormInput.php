@@ -67,10 +67,9 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
         $form->setMethod("get");
         $form->setTarget("_self");
         $form->setId($formId);
-        $form->addInput(static::inputHidden("DSHBRD-FRM-SBMT", $formId));
         return $form;
     }
-    
+
     /**
      * @since SG-DSHBRD.00.03
      * 
@@ -84,10 +83,9 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
         $form->setMethod("post");
         $form->setTarget("_self");
         $form->setId($formId);
-        $form->addInput(static::inputHidden("DSHBRD-FRM-SBMT", $formId));
         return $form;
     }
-    
+
     /**
      * @since SG-DSHBRD.00.02
      * 

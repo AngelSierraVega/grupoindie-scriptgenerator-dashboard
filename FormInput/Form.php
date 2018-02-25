@@ -1,9 +1,5 @@
 <?php
 
-/**
- * SG-Dashboard - Form
- */
-
 namespace GIndie\ScriptGenerator\Dashboard\FormInput;
 
 use GIndie\ScriptGenerator\HTML5;
