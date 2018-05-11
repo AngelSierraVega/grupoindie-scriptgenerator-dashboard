@@ -12,7 +12,8 @@ ${licensePrefix?replace(" +$", "", "r")}
 ${licensePrefix}@package ScriptGenerator
 ${licensePrefix}@subpackage Dashboard
 ${licensePrefix?replace(" +$", "", "r")}
-${licensePrefix}@version SG-DSHBRD.00.00 ${date?date?string("yy-MM-dd")} Empty [class/trait/interface/file] created.
+${licensePrefix}@since ${date?date?string("yy-MM-dd")}
+${licensePrefix}@version UNDEFINED
 <#if licenseLast??>
 ${licenseLast}
 </#if>
