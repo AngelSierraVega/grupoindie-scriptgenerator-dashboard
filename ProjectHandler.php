@@ -15,7 +15,7 @@ namespace GIndie\ScriptGenerator\Dashboard;
  * @edit SG-DSHBRD.00.01
  * - Added code from Boostrap3
  */
-class ProjectHandler extends \GIndie\ProjectHandler
+class ProjectHandler extends \GIndie\ProjectHandler\AbstractProjectHandler
 {
 
     /**

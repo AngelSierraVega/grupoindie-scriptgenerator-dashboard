@@ -109,7 +109,7 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
      * @ut_params inputHidden "name" "value"
      * @ut_str inputHidden "<input type="hidden" name="name" value="value" />"
      */
-    public static function inputHidden($name, $value)
+    public static function inputHidden($name = null, $value = null)
     {
         return parent::inputHidden()->setName($name)->setValue($value);
     }
@@ -120,7 +120,7 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
      * @param type $value
      * @return \GIndie\ScriptGenerator\HTML5\Category\FormInput\Input\Submit
      */
-    public static function inputSubmit($value)
+    public static function inputSubmit($value = null)
     {
         return parent::inputSubmit()->setValue($value);
     }
@@ -134,7 +134,7 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
      * 
      * @return \GIndie\ScriptGenerator\Bootstrap3\FormInput\FormGroup
      */
-    public static function inputText($label, $name, $value = null)
+    public static function inputText($label = null, $name = null, $value = null)
     {
         $input = parent::inputText();
         $input->setName($name);
@@ -151,7 +151,7 @@ class FormInput extends \GIndie\ScriptGenerator\Bootstrap3\FormInput
      * 
      * @return \GIndie\ScriptGenerator\HTML5\Category\FormInput\Label
      */
-    public static function label($value, $forInput)
+    public static function label($value = null, $forInput = null)
     {
         $label = parent::label($value);
         $label->setAttribute("for", $forInput);

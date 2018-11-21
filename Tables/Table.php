@@ -16,7 +16,7 @@ namespace GIndie\ScriptGenerator\Dashboard\Tables;
  * - Class extends \GIndie\ScriptGenerator\Bootstrap3\Tables\Table
  * - Moved class from [src_project] to [src_project]\Tables
  * - Updated namespace
- * @version A0.00
+ * @version 00.F0
  */
 class Table extends \GIndie\ScriptGenerator\Bootstrap3\Tables\Table
 {

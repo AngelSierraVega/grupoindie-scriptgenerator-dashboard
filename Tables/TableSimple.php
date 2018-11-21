@@ -14,7 +14,16 @@ namespace GIndie\ScriptGenerator\Dashboard\Tables;
  * @since 18-05-11
  * @version UNDEFINED
  */
-class TableSimple
+class TableSimple extends Table
 {
-    //put your code here
+
+    /**
+     * @since 18-06-17
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        $this->addClass("table-striped");
+    }
+
 }
