@@ -6,7 +6,7 @@ namespace GIndie\ScriptGenerator\Dashboard;
  * DVLP-SG4-Dashboard - ProjectHandler
  *
  * @author Angel Sierra Vega <angel.sierra@grupoindie.com>
- * @copyright (c) 2018 Angel Sierra Vega. Grupo INDIE.
+ * @copyright (CC) 2020 Angel Sierra Vega. Grupo INDIE.
  *
  * @package ScriptGenerator
  * @subpackage Dashboard

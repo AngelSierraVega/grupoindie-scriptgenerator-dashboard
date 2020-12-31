@@ -10,7 +10,7 @@ namespace GIndie\ScriptGenerator\Dashboard;
  * Description of Login
  *
  * @author Angel Sierra Vega <angel.sierra@grupoindie.com>
- * @copyright (c) 2018 Angel Sierra Vega. Grupo INDIE.
+ * @copyright (CC) 2020 Angel Sierra Vega. Grupo INDIE.
  *
  * @package ScriptGenerator
  * @subpackage Dashboard
