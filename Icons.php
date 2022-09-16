@@ -5,10 +5,10 @@
  *
  * @copyright (CC) 2020 Angel Sierra Vega. Grupo INDIE.
  *
- * @package ScriptGenerator
- * @subpackage Dashboard
+ * @package GIndie\ScriptGenerator\Dashboard
  *
- * @version SG-DSHBRD.00.00 18-01-31 Empty class created.
+ * @version UNDEFINED
+ * @since 18-01-31
  */
 
 namespace GIndie\ScriptGenerator\Dashboard;
